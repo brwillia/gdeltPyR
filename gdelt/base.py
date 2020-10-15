@@ -645,7 +645,7 @@ class gdelt(object):
 
 
         if self.table == 'gkg' and self.version == 1:
-            results.columns = results.ix[0].values.tolist()
+            results.columns = results.iloc[0].values.tolist()
             results.drop([0], inplace=True)
             columns = results.columns
 
